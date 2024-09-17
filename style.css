@@ -1,1 +1,127 @@
-Test
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Full-height layout setup */
+html,
+body {
+  height: 100%; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Sidebar styles */
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  padding-top: 117px;
+  background-color: rgb(102, 102, 102);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure it stays behind the header */
+}
+
+.wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #ffffff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #989797;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+/* Header styles */
+.header {
+  width: calc(100% - 200px); /* Adjust width based on sidebar width */
+  background: skyblue;
+  padding: 0; /* Ensure no padding */
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Align to the top */
+  left: 200px; /* Align to the right of the sidebar */
+}
+
+.header-title {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/* Footer styles */
+footer {
+  width: calc(100% - 200px); /* Adjust width based on sidebar width */
+  background: skyblue;
+  padding: 0; /* Ensure no padding */
+  position: fixed;
+  bottom: 0;
+  left: 200px; /* Align to the right of the sidebar */
+  z-index: 1; /* Ensure it stays above other elements */
+  text-align: center;
+  color: white;
+}
+
+/* Main content styling for centering the heading */
+.main {
+  display: flex; /* Enable Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin-left: 400px; /* Offset for the sidebar */
+  margin-top: 500x; /* Adjust if necessary */
+}
+
+.my-country {
+  font-size: 3em; /* Adjust the font size as needed */
+  text-align: center;
+  margin: 0;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-left: 1%;
+}
+
+/* Additional paragraph styling */
+p {
+  margin-top: 200px;
+  margin-left: auto;
+}
+
+.info {
+  font-size: medium;
+  font-weight: 200;
+}
